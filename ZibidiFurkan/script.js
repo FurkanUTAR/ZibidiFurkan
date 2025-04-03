@@ -1,9 +1,14 @@
-function showContent(section) {
-    let sections = document.querySelectorAll('.contentSection');
-    sections.forEach(sec => sec.classList.remove('active'));
-    document.getElementById(section).classList.add('active');
+function showContent(sectionId) {
+    // Tüm içerik bölümlerini gizle
+    document.querySelectorAll('.contentSection').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Seçilen bölümü göster
+    document.getElementById(sectionId).style.display = 'block';
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    showContent('html'); // Varsayılan olarak HTML sayfasını göster
+// Varsayılan olarak HTML içeriğini göster
+document.addEventListener("DOMContentLoaded", function() {
+    showContent('html');
 });

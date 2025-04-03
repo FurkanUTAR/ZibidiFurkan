@@ -25,19 +25,131 @@
         
         <div id="content">
             <div id="html" class="contentSection">
-                <h2>HTML Dersi</h2>
-                <p>HTML, web sayfalarının iskeletini oluşturur. Etiketler ile içerik düzenlenir.</p>
+                <div class="baslik">HTML Nedir?</div>
+                <div class="icerik">
+                    HTML (Hyper Text Markup Language), Türkçesiyle "Zengin Metin İşaretleme Dili", web sayfalarını oluşturmak için kullanılan temel bir işaretleme dilidir. 1980'li yıllarda Tim Berners-Lee tarafından geliştirilen bu dil, 1990'larda web standardı haline gelmiştir. Berners-Lee, aynı zamanda web standartlarını belirleyen World Wide Web Consortium (W3C) organizasyonunun da kurucusudur.
+                    HTML'in ilk sürümlerinde, sayfalar yalnızca metinlerden oluşuyordu ve görsel olarak oldukça sınırlıydı. Etiketler büyük veya küçük harfle yazılabiliyordu. Daha sonraları XHTML (eXtensible HTML) geliştirildi ve HTML'e daha katı kurallar getirildi. Örneğin, tüm etiketlerin küçük harfle yazılması gerekiyordu ve belgelerin hiyerarşik bir yapıya sahip olması zorunlu hale geldi.
+                    1996 yılında CSS (Cascading Style Sheets) ortaya çıktı ve HTML ile oluşturulan web sayfaları, artık daha estetik ve esnek bir yapıya kavuştu. HTML zaman içinde gelişerek daha fazla özellik kazandı. Günümüzde HTML, CSS ve JavaScript ile birlikte kullanılarak modern, dinamik ve kullanıcı dostu web siteleri oluşturulmasını sağlar.
+                    HTML’in asıl gücü, PHP, ASP, ASP.NET gibi web programlama dilleriyle ve JavaScript gibi betik dilleriyle uyum içinde çalışmasından gelir. Bu sayede sadece içerik düzenlemekle kalmaz, etkileşimli ve dinamik web sayfaları da oluşturulabilir.               
+                </div>
+                <br>
+                <div class="baslik">Temel Kodlar</div>
+                <div class="icerik">
+                    <div class="yanBaslik">1. Temel HTML Sayfa Yapısı</div>
+                        <p>Her HTML belgesi aşağıdaki temel yapıyla başlar:</p>
+                        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="tr"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Benim İlk Sayfam&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Merhaba Dünya!&lt;/h1&gt;
+        &lt;p&gt;Bu benim ilk HTML sayfam.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                        </pre>
+
+                    <div class="yanBaslik">2. En Çok Kullanılan HTML Etiketleri</div>
+                        <h3>Başlıklar (Headings)</h3>
+                        <pre>
+                            &lt;h1&gt;Ana Başlık&lt;/h1&gt;
+                            &lt;h2&gt;Alt Başlık&lt;/h2&gt;
+                            &lt;h3&gt;Daha Küçük Başlık&lt;/h3&gt;
+                    Bu şekilde &lt;h6&gt;  &lt;/h6&gt; 'ya kadar gidiyor.
+                        </pre>
+
+                        <h3>Paragraf (Paragraph)</h3>
+                        <pre>
+                            &lt;p&gt;Bu bir paragraftır.&lt;/p&gt; 
+                        </pre>
+
+                        <h3>Listeler (Lists)</h3>
+                        <h4>Sırasız Liste (Madde İşaretli):</h4>
+                        <pre>
+                            &lt;ul&gt;
+                                &lt;li&gt;Elma&lt;/li&gt;
+                                &lt;li&gt;Armut&lt;/li&gt;
+                                &lt;li&gt;Muz&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </pre>
+
+                        <h4>Sıralı Liste (Numaralı):</h4>
+                        <pre>
+                            &lt;ol&gt;
+                                &lt;li&gt;Adım 1&lt;/li&gt;
+                                &lt;li&gt;Adım 2&lt;/li&gt;
+                                &lt;li&gt;Adım 3&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </pre>
+
+                    <div class="yanBaslik">3. Örnek Bir HTML Sayfası</div>
+                        <p>İşte basit bir web sayfası örneği:</p>
+                        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="tr"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Kişisel Web Sayfam&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hoş Geldiniz!&lt;/h1&gt;
+        &lt;p&gt;Bu benim kişisel web sayfam. Aşağıda bazı bilgiler bulabilirsiniz.&lt;/p&gt;
+
+        &lt;h2&gt;Hobilerim&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Yazılım Geliştirme&lt;/li&gt;
+            &lt;li&gt;Müzik Dinlemek&lt;/li&gt;
+            &lt;li&gt;Yürüyüş Yapmak&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;h2&gt;İletişim&lt;/h2&gt;
+            &lt;label&gt;E-posta:&lt;/label&gt;
+            &lt;input type="email" placeholder="E-posta adresiniz"&gt;&lt;br&gt;
+            &lt;button&gt;Gönder&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                        </pre>
+
+                    <div class="yanBaslik">4. HTML Etiketleri</div>
+                        <p>HTML'de kullanılan bazı temel etiketler:</p>
+                        <ol>
+                            <li>&lt;img&gt;: Resim ekler.</li>
+                            <li>&lt;div&gt;: Bölüm oluşturur.</li>
+                            <li>&lt;span&gt;: Satır içi bölüm oluşturur.</li>
+                            <li>&lt;table&gt;: Tablo oluşturur.</li>
+                        </ol>
+                </div>
             </div>
+
+
+
             <div id="css" class="contentSection">
-                <h2>CSS Dersi</h2>
-                <p>CSS, web sayfalarının stilini ve tasarımını belirler.</p>
+                <div class="baslik">CSS Nedir?</div>
+                <div class="icerik">
+                    CSS (Cascading Style Sheets), Türkçesiyle Basamaklı Stil Sayfaları, HTML ile oluşturulan web sayfalarının tasarımını ve görünümünü düzenlemek için kullanılan bir stil dilidir. CSS sayesinde yazı tipi, renk, arka plan, kenarlık, hizalama ve daha birçok görsel öğe kolayca yönetilebilir.
+                    CSS’ten önce, her HTML etiketi için ayrı ayrı stil tanımlaması yapmak gerekiyordu. Bu yöntem, büyük ve karmaşık projelerde yönetimi zorlaştırıyordu. CSS ile birlikte bu sorun ortadan kalktı; artık tek bir stil dosyası ile tüm sayfanın tasarımını düzenlemek mümkün hale geldi.
+                    CSS’in "cascading" (basamaklı) olarak adlandırılmasının sebebi, hiyerarşik bir yapı kullanarak stillerin belirli öğelere uygulanabilmesidir. Örneğin, bir div içerisindeki paragrafın ilk satırına şu şekilde erişilebilir:
+                    div > p:first-line { color: red; } Bu sayede belirlenen stil, tüm sayfalarda tek bir kod satırıyla uygulanabilir. CSS öğrenmesi ve kullanması oldukça kolaydır. 
+                    Web geliştirme sürecinde HTML ve CSS, temel yapı taşlarıdır ve genellikle yazılım öğrenmeye başlamadan önce bu iki teknolojiye hakim olunması tavsiye edilir. CSS’i öğrendikçe, daha önce yapamadığınız birçok tasarımı çok daha kolay bir şekilde gerçekleştirebildiğinizi fark edeceksiniz.
+                </div>
             </div>
+
+
+
             <div id="javascript" class="contentSection">
-                <h2>JavaScript Dersi</h2>
-                <p>JavaScript, web sayfalarına etkileşim kazandıran bir programlama dilidir.</p>
+                <div class="baslik">JavaScript Nedir?</div>
+                <div class="icerik">
+                    JavaScript, web sayfalarına dinamiklik ve etkileşim kazandırmak için kullanılan bir programlama dilidir. HTML sayfalarının yalnızca metin ve görsellerden oluşan statik yapısını değiştirerek, kullanıcı ile etkileşime girebilen sayfalar oluşturmayı sağlar.
+                    JavaScript sayesinde bir butona tıklandığında sayfanın içeriğini değiştirebilir, formları doğrulayabilir, animasyonlar ekleyebilir veya bir kullanıcının hareketlerini takip edebilirsiniz.
+                    Başlangıçta yalnızca web tarayıcıları için geliştirilen JavaScript, günümüzde Node.js gibi teknolojiler sayesinde sunucu tarafında da çalışabilir hale gelmiştir. Bu, JavaScript’in artık yalnızca tarayıcılarda değil, masaüstü ve mobil uygulamalarda da kullanılmasını sağlamaktadır.
+                    JavaScript'in en güçlü yanlarından biri, HTML ve CSS ile birlikte çalışabilmesi ve web sayfalarına interaktif öğeler ekleyebilmesidir. Örneğin, aşağıdaki JavaScript kodu bir butona tıklandığında ekrana mesaj verir:
+                    document.getElementById("myButton").addEventListener("click", function() { alert("Butona tıklandı!"); }); JavaScript öğrenmesi ve kullanması oldukça kolaydır. Temel HTML ve CSS bilgisi olan herkes, JavaScript ile daha gelişmiş ve kullanıcı dostu web siteleri oluşturabilir.
+                </div>
             </div>
         </div>
-        
         <div id="footer">
             <p>&copy; 2025 Zibidi Furkan | Tüm Hakları Saklıdır</p>
         </div>

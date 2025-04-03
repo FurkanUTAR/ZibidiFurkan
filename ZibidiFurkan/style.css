@@ -69,8 +69,17 @@ body {
 }
 
 .contentSection {
-    display: none;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contentSection:hover {
+    transform: scale(1.02);
 }
 
 .active {
@@ -85,8 +94,46 @@ body {
     margin-top: 20px;
 }
 
+.baslik {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ae00ff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.yanBaslik {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* İçerik Metni */
+.icerik {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.icerik pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
 /* Tablet boyutu */
 @media (max-width: 768px) {
+    .contentSection {
+        max-width: 90%;
+        padding: 15px;
+    }
+
     #header {
         height: 80px;
         padding: 0 10px;
@@ -109,6 +156,10 @@ body {
 
 /* Mobil boyutu */
 @media (max-width: 480px) {
+    .contentSection {
+        padding: 10px;
+    }
+
     #header {
         height: 70px;
     }
