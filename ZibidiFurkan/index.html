@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+
+    <link rel="icon" href="images/ZibidiFurkanLogo.png" type="png+xml">
     <title>Zibidi Furkan</title>
 </head>
 <body>
@@ -33,7 +35,7 @@
                     HTML’in asıl gücü, PHP, ASP, ASP.NET gibi web programlama dilleriyle ve JavaScript gibi betik dilleriyle uyum içinde çalışmasından gelir. Bu sayede sadece içerik düzenlemekle kalmaz, etkileşimli ve dinamik web sayfaları da oluşturulabilir.               
                 </div>
                 <br>
-                <div class="baslik">Temel Kodlar</div>
+                <div class="baslik">Temel HTML Kodları</div>
                 <div class="icerik">
                     <div class="yanBaslik">1. Temel HTML Sayfa Yapısı</div>
                         <p>Her HTML belgesi aşağıdaki temel yapıyla başlar:</p>
@@ -52,21 +54,23 @@
     &lt;/html&gt;
                         </pre>
 
-                    <div class="yanBaslik">2. En Çok Kullanılan HTML Etiketleri</div>
+                        <div class="yanBaslik">2. En Çok Kullanılan HTML Etiketleri</div>
+
                         <h3>Başlıklar (Headings)</h3>
                         <pre>
                             &lt;h1&gt;Ana Başlık&lt;/h1&gt;
                             &lt;h2&gt;Alt Başlık&lt;/h2&gt;
                             &lt;h3&gt;Daha Küçük Başlık&lt;/h3&gt;
-                    Bu şekilde &lt;h6&gt;  &lt;/h6&gt; 'ya kadar gidiyor.
+                            Bu şekilde &lt;h6&gt;&lt;/h6&gt; 'ya kadar gidiyor.
                         </pre>
-
+                        
                         <h3>Paragraf (Paragraph)</h3>
                         <pre>
-                            &lt;p&gt;Bu bir paragraftır.&lt;/p&gt; 
+                            &lt;p&gt;Bu bir paragraftır.&lt;/p&gt;
                         </pre>
-
+                        
                         <h3>Listeler (Lists)</h3>
+                        
                         <h4>Sırasız Liste (Madde İşaretli):</h4>
                         <pre>
                             &lt;ul&gt;
@@ -75,7 +79,7 @@
                                 &lt;li&gt;Muz&lt;/li&gt;
                             &lt;/ul&gt;
                         </pre>
-
+                        
                         <h4>Sıralı Liste (Numaralı):</h4>
                         <pre>
                             &lt;ol&gt;
@@ -84,6 +88,52 @@
                                 &lt;li&gt;Adım 3&lt;/li&gt;
                             &lt;/ol&gt;
                         </pre>
+                        
+                        <h4>Farklı Sıralama Tipleri</h4>
+                        <p><code>&lt;ol&gt;</code> etiketinde <code>type</code> özelliğiyle numaralandırma stilini değiştirebilirsin:</p>
+                        
+                        <h5>Harflerle (Küçük harfler):</h5>
+                        <pre>
+                            &lt;ol type="a"&gt;
+                                &lt;li&gt;Birinci Madde&lt;/li&gt;
+                                &lt;li&gt;İkinci Madde&lt;/li&gt;
+                                &lt;li&gt;Üçüncü Madde&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </pre>
+                        
+                        <h5>Büyük Harflerle:</h5>
+                        <pre>
+                            &lt;ol type="A"&gt;
+                                &lt;li&gt;A maddesi&lt;/li&gt;
+                                &lt;li&gt;B maddesi&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </pre>
+                        
+                        <h5>Roma Rakamları (Küçük):</h5>
+                        <pre>
+                            &lt;ol type="i"&gt;
+                                &lt;li&gt;Birinci&lt;/li&gt;
+                                &lt;li&gt;İkinci&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </pre>
+                        
+                        <h5>Roma Rakamları (Büyük):</h5>
+                        <pre>
+                            &lt;ol type="I"&gt;
+                                &lt;li&gt;I. Madde&lt;/li&gt;
+                                &lt;li&gt;II. Madde&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </pre>
+                        
+                        <h5>Başlangıç Numarasını Değiştirme</h5>
+                        <p>Listelerin hangi sayıyla başlayacağını belirlemek için <code>start</code> özelliği kullanılır:</p>
+                        <pre>
+                            &lt;ol start="5"&gt;
+                                &lt;li&gt;Beşinci&lt;/li&gt;
+                                &lt;li&gt;Altıncı&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </pre>
+                        
 
                     <div class="yanBaslik">3. Örnek Bir HTML Sayfası</div>
                         <p>İşte basit bir web sayfası örneği:</p>
@@ -125,7 +175,6 @@
             </div>
 
 
-
             <div id="css" class="contentSection">
                 <div class="baslik">CSS Nedir?</div>
                 <div class="icerik">
@@ -135,8 +184,144 @@
                     div > p:first-line { color: red; } Bu sayede belirlenen stil, tüm sayfalarda tek bir kod satırıyla uygulanabilir. CSS öğrenmesi ve kullanması oldukça kolaydır. 
                     Web geliştirme sürecinde HTML ve CSS, temel yapı taşlarıdır ve genellikle yazılım öğrenmeye başlamadan önce bu iki teknolojiye hakim olunması tavsiye edilir. CSS’i öğrendikçe, daha önce yapamadığınız birçok tasarımı çok daha kolay bir şekilde gerçekleştirebildiğinizi fark edeceksiniz.
                 </div>
-            </div>
+                <br>
+                <div class="baslik">Temel CSS Kodları</div>
+                <div class="icerik">
+                    <div class="yanBaslik">1. CSS Ekleme Yöntemleri</div>
+    <h3>1. Satır İçi CSS (Inline)</h3>
+    <pre>
+        &lt;p style="color: blue;"&gt;Bu mavi renkte bir paragraftır.&lt;/p&gt;
+    </pre>
 
+    <h3>2. Dahili CSS (Internal)</h3>
+    <pre>
+        &lt;head&gt;
+            &lt;style&gt;
+                body {
+                    background-color: lightgray;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+    </pre>
+
+    <h3>3. Harici CSS (External)</h3>
+    <pre>
+        &lt;link rel="stylesheet" href="stil.css"&gt;
+    </pre>
+
+    <div class="yanBaslik">2. Sık Kullanılan CSS Özellikleri</div>
+    <ol>
+        <li><strong>color</strong>: Yazı rengini ayarlar.</li>
+        <li><strong>background-color</strong>: Arka plan rengini belirler.</li>
+        <li><strong>font-size</strong>: Yazı boyutunu belirler.</li>
+        <li><strong>text-align</strong>: Metni hizalar (left, center, right).</li>
+        <li><strong>margin</strong>: Dış boşlukları ayarlar.</li>
+        <li><strong>padding</strong>: İç boşlukları ayarlar.</li>
+        <li><strong>border</strong>: Kenarlık ekler.</li>
+    </ol>
+
+    <div class="yanBaslik">3. Sınıf (class) ve Kimlik (id) Kullanımı</div>
+    <p>Belirli elementlere özel stil vermek için <code>class</code> ve <code>id</code> kullanılır.</p>
+    <pre>
+        &lt;style&gt;
+            .kirmizi {
+                color: red;
+            }
+
+            #ozel {
+                font-weight: bold;
+            }
+        &lt;/style&gt;
+
+        &lt;p class="kirmizi"&gt;Bu kırmızı yazıdır.&lt;/p&gt;
+        &lt;p id="ozel"&gt;Bu kalın yazıdır.&lt;/p&gt;
+    </pre>
+
+    <div class="yanBaslik">4. CSS Box Model (Kutu Modeli)</div>
+    <p>Her HTML öğesi bir kutu gibi düşünülür. Kutu modeli şu alanlardan oluşur:</p>
+    <ul>
+        <li><strong>Content</strong>: İçerik</li>
+        <li><strong>Padding</strong>: İçerik ile kenarlık arası boşluk</li>
+        <li><strong>Border</strong>: Kenarlık</li>
+        <li><strong>Margin</strong>: Dış boşluk</li>
+    </ul>
+    <pre>
+        &lt;style&gt;
+            div {
+                width: 200px;
+                padding: 20px;
+                border: 2px solid black;
+                margin: 30px;
+            }
+        &lt;/style&gt;
+    </pre>
+
+    <div class="yanBaslik">5. Geçiş Efektleri (CSS Transitions)</div>
+    <p>Geçiş efektleri, bir CSS özelliği değiştiğinde bu değişimin yumuşak bir şekilde gerçekleşmesini sağlar. Örneğin, bir kutunun rengi ya da boyutu yavaşça değişebilir.</p>
+    <pre>
+        &lt;style&gt;
+            .gecis {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                transition: all 0.5s ease;
+            }
+
+            .gecis:hover {
+                background-color: red;
+                width: 150px;
+            }
+        &lt;/style&gt;
+
+        &lt;div class="gecis"&gt;&lt;/div&gt;
+    </pre>
+
+    <p><strong>transition</strong> özelliğinde şunlar ayarlanabilir:</p>
+    <ul>
+        <li><code>property</code>: Hangi özelliğin geçişle değişeceği (örneğin <code>background-color</code>).</li>
+        <li><code>duration</code>: Geçiş süresi (örneğin <code>0.5s</code>).</li>
+        <li><code>timing-function</code>: Geçişin hız eğrisi (örneğin <code>ease</code>, <code>linear</code>, <code>ease-in</code>).</li>
+        <li><code>delay</code>: Geçişin başlaması için bekleme süresi (isteğe bağlı).</li>
+    </ul>
+
+    <div class="yanBaslik">6. Dönüşümler (CSS Transform)</div>
+    <p><code>transform</code> özelliğiyle bir öğeyi döndürebilir, ölçeklendirebilir, kaydırabilir veya eğebilirsiniz. Genellikle <code>hover</code> gibi etkileşimlerle birlikte kullanılır.</p>
+    <h4>Örnekler:</h4>
+    <pre>
+        &lt;style&gt;
+            .donusum {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                transition: transform 0.3s;
+            }
+
+            .donusum:hover {
+                transform: rotate(45deg); /* 45 derece döndürme */
+            }
+
+            .buyut:hover {
+                transform: scale(1.2); /* %120 büyütme */
+            }
+
+            .kaydir:hover {
+                transform: translateX(50px); /* Sağa kaydırma */
+            }
+        &lt;/style&gt;
+
+        &lt;div class="donusum"&gt;&lt;/div&gt;
+        &lt;div class="donusum buyut"&gt;&lt;/div&gt;
+        &lt;div class="donusum kaydir"&gt;&lt;/div&gt;
+    </pre>
+    <p><strong>Yaygın kullanılan transform değerleri:</strong></p>
+    <ul>
+        <li><code>rotate(degree)</code>: Döndürür.</li>
+        <li><code>scale(x, y)</code>: Büyütür/küçültür.</li>
+        <li><code>translate(x, y)</code>: Yer değiştirir (x: yatay, y: dikey).</li>
+        <li><code>skew(x, y)</code>: Eğme efekti verir.</li>
+    </ul>
+                </div>
+            </div>
 
 
             <div id="javascript" class="contentSection">
@@ -148,10 +333,162 @@
                     JavaScript'in en güçlü yanlarından biri, HTML ve CSS ile birlikte çalışabilmesi ve web sayfalarına interaktif öğeler ekleyebilmesidir. Örneğin, aşağıdaki JavaScript kodu bir butona tıklandığında ekrana mesaj verir:
                     document.getElementById("myButton").addEventListener("click", function() { alert("Butona tıklandı!"); }); JavaScript öğrenmesi ve kullanması oldukça kolaydır. Temel HTML ve CSS bilgisi olan herkes, JavaScript ile daha gelişmiş ve kullanıcı dostu web siteleri oluşturabilir.
                 </div>
+                <br>
+                <div class="baslik">Temel JavaScript Kodları</div>
+                <div class="icerik">
+                <div class="yanBaslik">1. JavaScript Ekleme Yöntemleri</div>
+                <h3>1. Satır İçi JavaScript</h3>
+        <pre>
+            &lt;button onclick="alert('Butona tıkladın!')"&gt;Tıkla&lt;/button&gt;
+        </pre>
+            
+                <h3>2. Dahili JavaScript</h3>
+                <pre>
+                    &lt;script&gt;
+                        console.log("Konsola yazı yazıldı.");
+                    &lt;/script&gt;
+                </pre>
+
+                <h3>3. Harici JavaScript</h3>
+                <pre>
+                    &lt;script src="script.js"&gt;&lt;/script&gt;
+                </pre>
+
+                <div class="yanBaslik">2. Değişkenler (Variables)</div>
+                <p>Veri saklamak için kullanılır:</p>
+                <pre>
+                    let isim = "Ali";
+                    const yas = 17;
+                    var sehir = "İstanbul";
+                </pre>
+
+                <div class="yanBaslik">3. Koşullu İfadeler (if-else)</div>
+                <p>Şartlara göre farklı işlemler yapılmasını sağlar:</p>
+                <pre>
+                    let not = 85;
+
+                    if (not &gt;= 50) {
+                        alert("Geçtin!");
+                    } else if (not == 50) {
+                        alert("Sınırdasın :p");
+                    } else {
+                        alert("Kaldın.");
+                    }
+                </pre>
+
+                <div class="yanBaslik">4. Fonksiyonlar (Functions)</div>
+                <p>Belirli görevleri yapmak için kullanılır:</p>
+                <pre>
+                    function selamla() {
+                        alert("Selam!");
+                    }
+
+                    selamla();
+                </pre>
+
+                <div class="yanBaslik">5. Olaylar (Events)</div>
+                <p>Kullanıcının sayfa ile etkileşimini yakalar:</p>
+<pre>
+    &lt;button onclick="renkDegistir()"&gt;Rengi Değiştir&lt;/button&gt;
+
+    &lt;script&gt;
+        function renkDegistir() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+    &lt;/script&gt;
+</pre>
+
+                <div class="yanBaslik">6. Elementlere Erişim (getElementById)</div>
+                <p>HTML elementlerine ID kullanarak erişebilirsin:</p>
+<pre>
+    &lt;p id="mesaj"&gt;Merhaba!&lt;/p&gt;
+    &lt;button onclick="degistir()"&gt;Yazıyı Değiştir&lt;/button&gt;
+
+    &lt;script&gt;
+        function degistir() {
+            document.getElementById("mesaj").innerText = "Butona tıkladın!";
+        }
+    &lt;/script&gt;
+</pre>
+
+                <div class="yanBaslik">7. addEventListener Kullanımı</div>
+                <p>Olayları daha profesyonel şekilde tanımlar:</p>
+<pre>
+    &lt;button id="btn"&gt;Bana Bas&lt;/button&gt;
+
+    &lt;script&gt;
+        document.getElementById("btn").addEventListener("click", function() {
+            alert("Butona bastın!");
+        });
+    &lt;/script&gt;
+</pre>
+
+                <div class="yanBaslik">8. Diziler (Arrays)</div>
+                <p>Birden fazla veri tutmak için kullanılır:</p>
+                <pre>
+                    let meyveler = ["Elma", "Muz", "Portakal"];
+                    alert(meyveler[0]); // Elma
+                </pre>
+
+                <div class="yanBaslik">9. Döngüler (Loops)</div>
+                <p>Bir işlemi tekrar tekrar yapmak için:</p>
+                <pre>
+                    let sayilar = [1, 2, 3, 4, 5];
+
+                    for (let i = 0; i &lt; sayilar.length; i++) {
+                        console.log(sayilar[i]);
+                    }
+                </pre>
+
+                <div class="yanBaslik">10. Kullanıcıdan Veri Almak</div>
+                <h4>prompt</h4>
+                <pre>
+                    let ad = prompt("Adınız nedir?");
+                    alert("Merhaba " + ad);
+                </pre>
+
+                <h4>confirm</h4>
+                <pre>
+                    let cevap = confirm("Silmek istediğine emin misin?");
+                    if (cevap) {
+                        alert("Silindi.");
+                    } else {
+                        alert("İptal edildi.");
+                    }
+                </pre>
+
+                <div class="yanBaslik">11. Zamanlayıcılar (setTimeout ve setInterval)</div>
+                <h4>setTimeout (Belirli süre sonra çalıştır)</h4>
+                <pre>
+                    setTimeout(function() {
+                        alert("3 saniye sonra bu mesaj görünecek.");
+                    }, 3000);
+                </pre>
+
+                <h4>setInterval (Belirli aralıklarla tekrar et)</h4>
+                <pre>
+                    setInterval(function() {
+                        console.log("Her 2 saniyede bir bu yazı çıkar.");
+                    }, 2000);
+                </pre>
+
+                <div class="yanBaslik">12. HTML İçeriğini Değiştirmek</div>
+<pre>
+    &lt;p id="icerik"&gt;Eski içerik&lt;/p&gt;
+    &lt;button onclick="guncelle()"&gt;İçeriği Güncelle&lt;/button&gt;
+
+    &lt;script&gt;
+        function guncelle() {
+            document.getElementById("icerik").innerHTML = "&lt;strong&gt;Yeni içerik&lt;/strong&gt;";
+        }
+    &lt;/script&gt;
+</pre>
+                </div>                
             </div>
-        </div>
-        <div id="footer">
-            <p>&copy; 2025 Zibidi Furkan | Tüm Hakları Saklıdır</p>
+
+            <div id="footer">
+                <p>&copy; 2025 Zibidi Furkan | Tüm Hakları Saklıdır</p>
+            </div>
         </div>
     </div>
 </body>
