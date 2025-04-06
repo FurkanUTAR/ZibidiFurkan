@@ -6,25 +6,22 @@ body {
 
 #header {
     height: 100px; /* Daha kompakt başlık alanı */
+    width: 100%;
     position: relative;
     background-color: #fff;
     padding: 0 15px;
     box-sizing: border-box;
-    width: 100%;
-    display: flex; /* Flexbox kullanımı */
+    display: flex;
     align-items: center; /* Dikeyde ortala */
-    justify-content: space-between; /* Elemanları yatayda dağıt */
 }
 
 #logo {
     height: 80px; width: 80px;
     background-image: url("images/ZibidiFurkanLogo.png");
-    background-size: contain; /* Logo tam görünsün */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.5s;
-    flex-shrink: 0; /* Küçülmesini engelle */
-    order: 2; /* Sağda kalması için */
 }
 
 #logo:hover{
@@ -39,8 +36,6 @@ body {
     flex-grow: 1; /* Kalan alanı kaplasın */
     text-align: left; /* Sola dayalı */
     white-space: nowrap; /* Tek satırda kal */
-    overflow: hidden; /* Taşan kısmı gizle */
-    text-overflow: ellipsis; /* ... ile göster */
 }
 
 #container {
@@ -55,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     background: #333;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .navItem {
@@ -64,6 +59,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .navItem:hover {
     background: #555;
 }
@@ -74,24 +70,12 @@ body {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px #0000001a;
     transition: transform 0.3s ease-in-out;
 }
 
 .contentSection:hover {
-    transform: scale(1.02);
-}
-
-.active {
-    display: block;
-}
-
-#footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-    margin-top: 20px;
+    transform: scale(1.01);
 }
 
 .baslik {
@@ -112,7 +96,6 @@ body {
     color: #555;
 }
 
-/* İçerik Metni */
 .icerik {
     font-size: 16px;
     color: #444;
@@ -125,6 +108,14 @@ body {
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
 }
 
 /* Tablet boyutu */
